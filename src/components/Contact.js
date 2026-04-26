@@ -33,9 +33,9 @@ const Contact = () => {
     {
       icon: 'linkedin',
       title: 'LinkedIn',
-      content: 'linkedin.com/in/adnankhan',
+      content: 'linkedin.com/in/adnankhavpvtt',
       type: 'link',
-      href: 'https://linkedin.com/in/adnankhan'
+      href: 'https://www.linkedin.com/in/adnankhavpvtt'
     }
   ];
 
