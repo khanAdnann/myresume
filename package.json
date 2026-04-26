@@ -1,28 +1,22 @@
 {
   "name": "adnan-khan-portfolio",
   "version": "1.0.0",
-  "description": "Adnan Khan - Senior Java Developer Portfolio React Application",
-  "main": "index.js",
+  "private": true,
+  "description": "Adnan Khan Portfolio",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@csstools/normalize.css": "^12.1.1",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.0",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "5.0.1",
     "react-scroll": "^1.8.7"
-  },
-  "devDependencies": {
-    "@types/node": "^18.11.18",
-    "@types/react": "^18.0.26",
-    "@types/react-dom": "^18.0.10"
   },
   "browserslist": {
     "production": [
@@ -35,15 +29,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "keywords": [
-    "portfolio",
-    "react",
-    "developer",
-    "java",
-    "spring-boot",
-    "resume"
-  ],
-  "author": "Adnan Khan",
-  "license": "MIT"
+  }
 }
