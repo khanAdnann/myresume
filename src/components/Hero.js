@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
+import ResumeDownload from './ResumeDownload';
 
 const Hero = () => {
   const [typedText, setTypedText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(100);
+
+  // Profile image - replace with your actual image path
+  const profileImage = "/images/adnan-profile.jpg";
 
   const roles = [
     'Java Developer',
@@ -84,9 +88,9 @@ const Hero = () => {
                 >
                   <i className="fas fa-envelope"></i> Hire Me
                 </Link>
-                <a href="#" className="btn btn-outline-primary btn-lg" download="resume.pdf">
+                <ResumeDownload className="btn btn-outline-primary btn-lg">
                   <i className="fas fa-download"></i> Download Resume
-                </a>
+                </ResumeDownload>
               </div>
               
               <div className="social-links mt-4">
@@ -109,9 +113,13 @@ const Hero = () => {
             <div className="profile-card">
               <div className="profile-img">
                 <img 
-                  src="https://via.placeholder.com/400x400/4a69bd/ffffff?text=Adnan+Khan" 
+                  src={profileImage} 
                   alt="Adnan Khan" 
-                  className="img-fluid"
+                  className="img-fluid rounded-circle"
+                  style={{ maxHeight: '400px', objectFit: 'cover' }}
+                  onError={(e) => {
+                    e.target.src = "https://via.placeholder.com/400x400/4a69bd/ffffff?text=Adnan+Khan";
+                  }}
                 />
               </div>
               <div className="profile-overlay">

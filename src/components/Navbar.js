@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
+import ResumeDownload from './ResumeDownload';
 
 const Navbar = ({ theme, toggleTheme }) => {
   const [scrolled, setScrolled] = useState(false);
@@ -74,9 +75,9 @@ const Navbar = ({ theme, toggleTheme }) => {
               </li>
             ))}
             <li className="nav-item ms-2">
-              <a className="btn btn-resume" href="#" download="resume.pdf">
+              <ResumeDownload className="btn btn-resume">
                 <i className="fas fa-download"></i> Resume
-              </a>
+              </ResumeDownload>
             </li>
             <li className="nav-item ms-2">
               <button className="btn btn-theme-toggle" onClick={toggleTheme}>
