@@ -16,12 +16,12 @@ const Footer = () => {
     },
     {
       icon: 'linkedin',
-      href: 'https://linkedin.com/in/adnankhan',
+      href: 'https://www.linkedin.com/in/adnankhavpvtt',
       label: 'LinkedIn'
     },
     {
       icon: 'github',
-      href: 'https://github.com/adnankhan',
+      href: 'https://github.com/khanAdnann',
       label: 'GitHub'
     }
   ];
